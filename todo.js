@@ -159,7 +159,8 @@ function showOnTheWebPage(objTodos) {
 
 
  //  addding date and time 
-
+/*
+ 
  var label2 = document.createElement('label');                   // create <label> </label> element
  label2.setAttribute('id','dateAndTime');      // id= dateAndTime   <label id = dateAndTime>    </label>
  var b = document.createElement('b');    // <b> </b>
@@ -170,10 +171,15 @@ function showOnTheWebPage(objTodos) {
     var dateTextNode = document.createTextNode(',' + currentDate);
     label2.appendChild(dateTextNode); 
      
+*/
+
 li.appendChild(myCheckBox);
 label.appendChild(todoNode);
 li.appendChild(label);
-li.appendChild(label2);
+
+// USE NEXT TIME
+
+// li.appendChild(label2);
 
 ul.insertBefore(li,ul.childNodes[0]);
 
