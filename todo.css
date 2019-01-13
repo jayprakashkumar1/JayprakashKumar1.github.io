@@ -1,0 +1,179 @@
+body{
+    background-color: darkcyan;
+    margin-bottom: 100px;
+}
+#container{             
+    margin:auto;
+    text-align: center;
+    /* border: 2px solid crimson; */
+    /* height:400px; */
+    width: 80%;
+}
+.button{
+    height:40px;
+    width:150px;
+}
+#input{
+    margin-top:10px;
+    height:30px;
+    width:50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: initial;
+}
+.button{
+    margin-top:10px;
+    color:white;
+    background-color: green;
+}
+#editButton {
+    background-color: darkslategray;
+    float: right;
+    height:30px;
+    width: 70px;
+    cursor: pointer;
+    opacity:0;
+    background-color: black;
+    color: white;
+}
+.button:hover{
+  background-color:black;
+  font-size: 18px;
+}
+#container ul li{
+    list-style: none;
+    border:0.5px solid cornflowerblue;
+    text-align: left;
+    margin: 5px auto ;
+    /* height: 40px; */
+    /* for comes in/out smoothly */
+    transition: opacity 0.5s ease-in-out; 
+    opacity: 0;
+    width:80%; 
+}
+#container ul li#firstList {
+    border : 0.5px solid darkcyan;
+}
+
+#container ul li label{
+    /* margin: 0 auto; */
+    /* height: 100%; */
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 40px;
+    /* width:100%;  */
+    /* border: 1px solid green; */
+}
+#container .listItem{
+    opacity: 1;
+}
+ #container ul li #checkBox{
+    width:30px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    border: 1px solid black;
+    -webkit-appearance: none;
+}
+#container ul li input[name="hideCheckBox"] {
+    opacity: 0;          
+      /* for first checkbox */ 
+}
+
+#container ul li #dateAndTime {
+
+    float: right;
+    /* border: 2px solid red; */
+    /* width: 200px; */
+}
+ #container ul li #checkBox:checked:after {
+     content: '\2714';
+     position: absolute;
+     color: blue;
+     font-size: 26px;
+ }
+ #container ul li input[type="checkBox"]:checked + label {
+     text-decoration: line-through;
+     color:white;
+     opacity: 0.4;
+}
+
+#container .controls #input:focus {
+    outline: 0;
+}
+#container #controls button {
+    cursor: pointer;
+}
+#container #controls button:hover {
+    transform: scale(1.07)
+}
+#container .listItem {
+opacity: 1;
+}
+.visual{
+    opacity: 1 !important;
+    vertical-align: middle;
+}
+/* // for showing button */
+.editClassButton {             
+    opacity: 1 !important;
+    vertical-align: middle; 
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+#footer {
+    background-color: dimgray;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    color:white;
+    text-align: center;
+    opacity: 0.4;
+    bottom: 0;
+    width: 100%;
+    height: 50px; 
+    /* //same height as the margin to the bottom of the body */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

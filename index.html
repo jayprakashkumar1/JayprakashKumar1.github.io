@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>             
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=(screen.weight), initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MY Todo APP</title>
+   <link rel="stylesheet" href="./todo.css">
+</head>  
+<body>
+        <div id="container">
+            <div id="controls">
+                <h2 id="h2">My Awesome TODO</h2>
+                <input type="text" id="input" placeholder="Enter your task"><br>
+                <!-- to check whether enter key is pressed or not -->
+                <script>
+                var input = document.getElementById("input");
+                input.addEventListener("keyup", function(event) {
+                event.preventDefault();
+                    if (event.keyCode === 13) {
+                        document.getElementById("addButton").click();
+                    }
+                });
+                        
+                </script>
+                
+                <p id="demo"> </p>
+                <button id="addButton" class="button" onclick="addItem()">Add TODO</button><br>  
+                <button class="button" onclick="removeItem()">Remove Done TODO</button><br>
+            </div>
+            <ul id="todoList">
+                <li class="listItem" id ="firstList">
+                    <input type="checkbox" id="checkBox" name = 'hideCheckBox'>
+                    <label id="todoLabel"></label>
+                    <label id = "dateAndTime"> <b></b></label>
+                    <button id = "editButton">Edit</button>
+                </li>
+               
+            </ul>
+        </div>
+        <script src="./todo.js"></script>
+        <script>
+               // defined in todo.js
+            window.onload = fetchFromLocalStorage;
+            // window.onload = addEventToCheckBox;
+                   
+        </script>
+
+<div id="footer"> <p>@copyright 2019 , By Jay.</p></div>
+</body>
+</html>
