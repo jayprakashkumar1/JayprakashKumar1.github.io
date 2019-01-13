@@ -1,6 +1,6 @@
 # JayprakashKumar1.github.io
 Set your Daily Task and complete it.It willl keep track of your all todo offline.
-Basic concept of local storage and JSON is used.
+Basic concept of local storage is javascript  is used.
 More functionality will be added soon.
 
 Let's  see some snapshots : 
